@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <STYLE>
+        body {
+            background-image: linear-gradient(90deg, rgb(170, 192, 252), rgb(195, 215, 251), rgb(204, 229, 255), aliceblue);
+
+        }
+
+        span {
+            color: rgb(242, 21, 21);
+        }
+
+        header>div {
+            display: flex;
+            float: right;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-image: linear-gradient(90deg, rgb(170, 192, 252), rgb(195, 215, 251), rgb(204, 229, 255), aliceblue);
+
+
+        }
+
+        .navbar {
+            margin-right: 100px;
+            display: flex;
+            gap: 50px;
+        }
+
+        main>div>img {
+            width: 100%;
+            height: 750px;
+            opacity: 0.3;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            border-radius: 5PX;}
+
+        .home-img-data {
+            position: absolute;
+            bottom: 500px;
+            padding-right: 65px;
+            font-size: 40px;
+            right: 220px;
+        }
+
+        .home-img-data1 {
+            position: absolute;
+            bottom: 450px;
+            padding-right: 190px;
+            padding-bottom: 26px;
+            right: 150px;
+            text-shadow: 0 0 10px gray;
+
+            margin-left: 50px;
+        }
+
+        .home-img-data2 {
+            position: absolute;
+            bottom: 400px;
+            padding-right: 520px;
+            right: 90px;
+            padding-bottom: 40px;
+
+        }
+
+        .btn-Browse {
+            position: absolute;
+            bottom: 378px;
+            margin-left: -735px;
+            width: 120px;
+
+            background-color: rgb(242, 21, 21);
+            border: none;
+            border-radius: 5px;
+            color: aliceblue;
+            box-shadow: 0 0 5px whitesmoke;
+            opacity: 0.8;
+
+            height: 50px;
+        }
+
+        .search-bar {
+            display: flex;
+            position: absolute;
+            bottom: 200px;
+            gap: 60px;
+            border-radius: 5px;
+            margin-left: 350px;
+            box-shadow: 0 0 5px rgb(242, 21, 21);
+            height: 40px;
+            padding: 10px;
+            width: 750px;
+
+        }
+
+        .search-bar>button {
+            background: rgb(242, 21, 21);
+            border: none;
+            border-radius: 5px;
+            width: 400px;
+            color: aliceblue;
+            opacity: 0.8;
+
+        }
+
+        .search-bar>select {
+            width: 500px;
+            border-radius: 5px;
+        }
+
+        /* cards */
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            overflow-x: auto;
+            background-image: linear-gradient(90deg, rgb(170, 192, 252), rgb(195, 215, 251), rgb(204, 229, 255), aliceblue);
+
+        }
+
+        .card1 {
+            background-color: rgb(204, 210, 215);
+            box-shadow: 0 0 10px rgb(43, 43, 43);
+            cursor: pointer;
+            margin-top: 50px;
+            width: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            padding-bottom: 10px;
+            margin-bottom: 100px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+
+        .image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px smoke white;
+        }
+
+        .card1>button {
+            margin-left: 140px;
+        }
+
+        .Featured-Properties {
+            font-size: 50px;
+            color: rgb(242, 21, 21);
+            margin-left: 500px;
+
+        }
+
+        .card1:hover {
+
+            transform: scale(1.04) translateY(-20px);
+        }
+
+        button:hover {
+            background-color: rgb(144, 144, 200);
+        }
+
+        button>a {
+            text-decoration: none;
+            color: white;
+        }
+        .Event-expo {
+            box-shadow: 0 0 10px rgb(52, 52, 52);
+           
+        }
+
+        .Event-expodata {
+            background-color: rgb(242, 21, 21);
+            color: aliceblue;
+            width: 400px;
+            text-align: center;
+            margin-top: -20px;
+             border-radius: 5px;
+        }
+/* event */
+        .Event {
+            display: flex;
+            gap: 40px;
+            margin-left: 60px;
+             height: 300px;
+             
+        }
+
+        .Event-expodata1 {
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .Event-expodata1>button{
+            background-color:rgb(242, 21, 21);
+            border: none;
+            border-radius: 5px;
+            color: aliceblue;
+           height: 30px;
+           margin-top: 30px;
+        }
+        .Event-head{
+            margin-left: 540px;
+            margin-bottom: 20px;
+        }
+        .Event-head>p{
+           margin-left: -90px;  
+        }
+        .Event-expo:hover {
+
+            transform: scale(1.04) translatex(-20px);
+        }
+        
+
+        /* about */
+        .about-expo {
+            background-color: rgb(119, 191, 255);
+            padding: 3rem 0;
+            margin: 3rem 0;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .about-text p {
+            text-align: justify;
+        }
+
+        .about-text a {
+            text-decoration: none;
+            color: white;
+            border-radius: 5PX;
+        
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: auto;
+        }
+        .about-text>button{
+            margin-left: 200px;
+            background-color: rgb(242, 21, 21);
+           height: 50px;
+           border-radius: 5px;
+           border: none;
+           margin-top: 40px;
+        }
+
+        /* footer css */
+        .container>h2 {
+            font-size: 40px;
+        }
+
+        .newsletter {
+            background-image: linear-gradient(90deg, rgb(170, 192, 252), rgb(195, 215, 251), rgb(204, 229, 255), aliceblue);
+
+            padding: 48px;
+            text-align: center;
+            opacity: 0.9;
+        }
+
+        .newsletter p {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .newsletter-form {
+            display: flex;
+            border-radius: 5px;
+            gap: 10px;
+            margin-left: 550px;
+
+        }
+
+        .newsletter-form button {
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer {
+            background: rgb(207, 207, 209);
+
+            padding: 48px 32px;
+        }
+
+        .footer-content {
+            display: flex;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            margin-bottom: 48px;
+
+        }
+
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 32px;
+            padding-left: 37px;
+           
+        }
+     
+        .footer-column1{
+            margin-left: 400px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding-right: 48px;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 8px;
+        }
+
+      
+
+        .footer-column ul li a:hover {
+            color: #aaa;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+            font-size: 16px;
+        }
+    </STYLE>
+</head>
+
+<body>
+    <header>
+        <h1>Hyderabad<span>PropertyExpo</span></h1>
+        <div class="navbar">
+            <h4><a href="#Home" id="Home">Home</a></h4>
+            <h4><a href="#Properties">Properties</a></h4>
+            <h4><a href="#ExpoEvents">ExpoEvents</a></h4>
+            <h4><a href="#about">About</a></h4>
+            <h4><a href="#contact">Contact</a></h4>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+
+            <img src="https://projex.com.au/wp-content/uploads/2023/05/projex-From-Foundations-to-the-Roof.jpg"
+                alt="Building">
+            <h1 class="home-img-data">Discover Your<span> Dream Property</span> in Hyderabad</h1>
+            <h4 class="home-img-data1">Expolre The Best Residenntal and commercial properties across the city with our
+                comprehensive</h2>
+                <h4 class="home-img-data2">listing and virtual tours</h2>
+                    <button class="btn-Browse"><a href="nav.html">Register for Expo</a></button>
+                    <div class="search-bar">
+                        <select>
+                            <OPTION>select Location</OPTION>
+                            <option>Gachibowli</option>
+                            <option>KPHB Colony</option>
+                            <option>Dilsuknagar</option>
+                            <option>Hitech-City</option>
+                            <option>Ameerpet</option>
+                            <option>Jubilee Hills</option>
+                        </select>
+
+                        <select>
+                            <option>All Types</option>
+                            <option>Site</option>
+                            <option>Villa</option>
+                            <option>Flat</option>
+                        </select>
+
+                        <select>
+                            <option>All Prices</option>
+                            <option> 25 lakhs</option>
+                            <option>50 lakhs</option>
+                            <option>1-2 crores</option>
+                            <option>2-3 crores</option>
+                        </select>
+                        <button>Search</button>
+                    </div>
+        </div>
+        <h3 class="Featured-Properties" id="Properties">Featured Properties</h3>
+        <div class="cards-container">
+            <div class="card1">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Apartment">
+                </div>
+                <h4>$1.2 Crore</h4>
+                <p>Luxury Apartment, Nanakaramguda</p>
+                <h5>🛌 3 Bedrooms 🛁 2 Bathrooms 🚗 Parking</h5>
+                <button>View Details</button>
+            </div>
+
+            <div class="card1">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Villa">
+                </div>
+                <h4>$3.5 Crore</h4>
+                <p>Modern Villa, Jubilee Hills</p>
+                <h5>🛌 4 Bedrooms 🛁 3 Bathrooms 🚗 Parking</h5>
+                <button>View Details</button>
+            </div>
+
+            <div class="card1">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Commercial space">
+                </div>
+                <h4>$2.8 Crore</h4>
+                <p>Commercial Space, HITECH City</p>
+                <h5>🏢 Office 💻 200 Cabins 🚗 100 Parking</h5>
+                <button>View Details</button>
+            </div>
+            <div class="card1">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Villa">
+                </div>
+                <h4>$3.5 Crore</h4>
+                <p>Modern Villa, Jubilee Hills</p>
+                <h5>🛌 4 Bedrooms 🛁 3 Bathrooms 🚗 Parking</h5>
+                <button>View Details</button>
+            </div>
+<div class="card1">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Villa">
+                </div>
+                <h4>$3.5 Crore</h4>
+                <p>Modern Villa, Jubilee Hills</p>
+                <h5>🛌 4 Bedrooms 🛁 3 Bathrooms 🚗 Parking</h5>
+                <button>View Details</button>
+            </div>
+
+        </div>
+        <!-- event -->
+         <div class="Event-head" id="ExpoEvents"><h1><span>Up Coming Expo Events</span></h1>
+        <p>Join us at Our Exclusive Property Expo and Connect With Developers and Exports</p></div>
+        <div class="Event">
+        <div class="Event-expo" >
+            <div class="Event-expodata">
+                <h2>15<br>july 2025</h2>
+            </div>
+            <div class="Event-expodata1">
+                <h3>Hyderabad <span>Property </span>Expo 2025</h3>
+                <h3> 📍 Hitech-City</h3>
+                <p>join us the Hyderabad Property Expo</p>
+                <button><a href="nav.html">Register now</a></button>
+            </div>
+        </div>
+        <div class="Event-expo">
+            <div class="Event-expodata">
+               <h2>15<br>july 2025</h2>
+            </div>
+            <div class="Event-expodata1">
+                <h3>Hyderabad <span>Property </span>Expo 2025</h3>
+                <h3> 📍 Hitech-City</h3>
+                <p>join us the Hyderabad Property Expo</p>
+                <button><a href="nav.html">Register now</a></button>
+            </div>
+        </div>
+        <div class="Event-expo">
+            <div class="Event-expodata">
+               <h2>15<br>july 2025</h2>
+            </div>
+            <div class="Event-expodata1">
+                <h3>Hyderabad <span>Property </span>Expo 2025</h3>
+                <h3> 📍 Hitech-City</h3>
+                <p>join us the Hyderabad Property Expo</p>
+                <button><a href="nav.html">Register now</a></button>
+            </div>
+        </div>
+    </div>
+        <!-- about -->
+        <section class="about-expo" id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Hyderabad Property Expo</h2>
+                    <p>Hyderabad Property Expo is the premier platform connecting buyers, sellers, and investors in
+                        Hyderabad's booming real estate market. Our dynamic website and regular expos provide
+                        comprehensive access to the best properties across the city.</p>
+                    <p>With our interactive tools, real-time listings, and expert assistance, we make property discovery
+                        and investment seamless and rewarding. Whether you're looking for your dream home or a lucrative
+                        investment opportunity, we've got you covered.</p>
+                   <button><a href="" class="btn-primary">Learn About Our Events</a></button>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+                        alt="Property Expo">
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <section class="newsletter">
+        <div class="container">
+            <h2><b><span>Hang-On for new updates</span></b></h2>
+            <p><b>Signup to our newsletter for the latest property expo updates, and exclusive offers.</p></b><br>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter valid email address">
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Hyderabad Property Expo</h3>
+                    <p>Your trusted partner in Hyderabad real estate. Connecting buyers, sellers, and investors</p>
+                    <div class="social-links">
+                        <a href="#" class="fa"><img src="../assets/img/icons8-instagram-50.png"></a>
+                        <a href="#" class="fa"><img src="../assets/img/icons8-facebook-50.png"></a>
+                        <a href="#" class="fa"><img src="../assets/img/icons8-linked-in-50.png"></a>
+                        <a href="#" class="fa"><img src="../assets/img/icons8-twitter-bird-50.png"></a>
+                    </div>
+                </div>
+            
+                <div class="footer-column1">
+                    <h3 id="contact">Contact Us</h3>
+                    <ul>
+                        <li>Hyderabad</li>
+                        <li> +91 9999999999</li>
+                        <li>HyderabadPropertyExpo@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hyderabad Property Expo. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        </div>
+        </div>   
+            
+    </footer>
+</body>
+
+</html>
